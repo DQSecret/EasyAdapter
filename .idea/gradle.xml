@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/lib_generic" />
             <option value="$PROJECT_DIR$/lib_reflection" />
+            <option value="$PROJECT_DIR$/support_ui_adapters" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

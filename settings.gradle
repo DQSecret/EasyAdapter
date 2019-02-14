@@ -1,1 +1,1 @@
-include ':app', ':lib_generic', ':lib_reflection'
+include ':app', ':lib_generic', ':lib_reflection', ':support_ui_adapters'
