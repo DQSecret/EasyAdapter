@@ -31,7 +31,7 @@ public abstract class EasyViewHolder<V> extends RecyclerView.ViewHolder implemen
      * @param position : 下标
      * @param value    : 具体的 model 类型
      */
-    abstract void bindTo(int position, V value);
+    abstract protected void bindTo(int position, V value);
 
     /**
      * 可以在这里添加通用事件: 单击|长按事件
