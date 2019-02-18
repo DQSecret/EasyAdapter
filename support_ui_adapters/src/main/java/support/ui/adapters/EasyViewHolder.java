@@ -17,7 +17,7 @@ public abstract class EasyViewHolder<V> extends RecyclerView.ViewHolder implemen
      * 同时, 反射生成 Holder 的时候, 使用子类的构造器
      */
     public EasyViewHolder(Context context, ViewGroup parent, @LayoutRes int layoutId) {
-        this(LayoutInflater.from(context).inflate(layoutId, parent));
+        this(LayoutInflater.from(context).inflate(layoutId, parent, false));
     }
 
     private EasyViewHolder(@NonNull View itemView) {
