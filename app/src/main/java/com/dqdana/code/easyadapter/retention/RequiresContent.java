@@ -17,6 +17,8 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 public @interface RequiresContent {
 
+    // default 默认参数, 使用时可以不写任何参数, 加快速度
+
     Class<? extends View> loadView() default DefaultLoadView.class;
 
     Class<? extends View> emptyView() default DefaultEmptyView.class;
