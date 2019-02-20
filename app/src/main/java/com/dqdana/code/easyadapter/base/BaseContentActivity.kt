@@ -1,22 +1,17 @@
 package com.dqdana.code.easyadapter.base
 
+import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.view.View
-import com.dqdana.code.easyadapter.common.widget.EmptyView
-import com.dqdana.code.easyadapter.common.widget.ErrorView
 import com.dqdana.code.easyadapter.retention.RequiresContent
 
 @RequiresContent
-abstract class BaseContentActivity
-    : AppCompatActivity(),
-        EmptyView.OnEmptyViewClickListener,
-        ErrorView.OnErrorViewClickListener {
+abstract class BaseContentActivity : AppCompatActivity() {
 
-    override fun onEmptyViewClick(view: View) {
-
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        initView()
     }
 
-    override fun onErrorViewClick(view: View) {
+    abstract fun initView()
 
-    }
 }
