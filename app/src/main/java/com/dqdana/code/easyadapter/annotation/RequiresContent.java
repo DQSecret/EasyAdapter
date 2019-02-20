@@ -1,4 +1,4 @@
-package com.dqdana.code.easyadapter.retention;
+package com.dqdana.code.easyadapter.annotation;
 
 import android.view.View;
 
